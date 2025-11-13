@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "640132418155",
+    "project_id": "pato-delivery-56a56",
+    "storage_bucket": "pato-delivery-56a56.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640132418155:android:06064b95b837e66a40bf2e",
+        "android_client_info": {
+          "package_name": "com.example.pato_delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnuZQXk6Id6DmDAgCP5mvLyjvyKzYX0Dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640132418155:android:b5be27f134f5622340bf2e",
+        "android_client_info": {
+          "package_name": "com.example.pato_delivery_final"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnuZQXk6Id6DmDAgCP5mvLyjvyKzYX0Dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
