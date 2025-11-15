@@ -14,6 +14,7 @@ class PedidosBloc extends Bloc<PedidosEvent, PedidosState> {
       CargarPedidos event, Emitter<PedidosState> emit) async {
     emit(PedidosCargando());
 
+
     try {
       final pedidos = await _pedidosRepository.obtenerPedidos();
       emit(PedidosCargados(pedidos));
@@ -21,4 +22,5 @@ class PedidosBloc extends Bloc<PedidosEvent, PedidosState> {
       emit(PedidosError('Error al cargar los pedidos'));
     }
   }
+
 }

@@ -19,10 +19,10 @@ class PedidosRepository {
         restaurante: 'Restaurante El Pato Feliz',
         items: ['Hamburguesa', 'Papas Fritas', 'Gaseosa'],
         estado: 'Entregado',
-        direccion: 'Calle 123 #45-67',
+        direccion: 'Calle 123',
         repartidor: 'Carlos Pérez',
         calificacion: 4.8,
-        total: 25.0,
+        total: 25000.0,
       ),
       Pedido(
         id: '002',
@@ -32,7 +32,18 @@ class PedidosRepository {
         direccion: 'Av. Central 45',
         repartidor: 'Laura Gómez',
         calificacion: 4.5,
-        total: 32.0,
+        total: 32000.0,
+      ),
+
+      Pedido(
+        id: '003',
+        restaurante: 'Pizza Master',
+        items: ['Pizza Pepperoni', 'Coca-Cola'],
+        estado: 'Preparando',
+        direccion: 'Boulevard 98',
+        repartidor: 'Miguel Torres',
+        calificacion: 4.7,
+        total: 18000.0,
       ),
     ];
   }
