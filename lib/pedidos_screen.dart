@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pato_delivery_final/bloc/pedidos/pedidos_bloc.dart';
+import 'package:pato_delivery_final/bloc/pedidos/pedidos_event.dart';
 import 'package:pato_delivery_final/bloc/pedidos/pedidos_state.dart';
 import 'package:pato_delivery_final/bloc/pedidos/pedidos_event.dart';
 import 'package:pato_delivery_final/models/pedido_model.dart';
@@ -191,6 +192,22 @@ class PedidosScreen extends StatelessWidget {
           fontSize: 13,
           fontWeight: FontWeight.bold,
         ),
+      ),
+    );
+  }
+
+  Widget _buildHistorialTile(Pedido pedido) {
+    final esAceptado = pedido.estado == 'Aceptado';
+    final color = esAceptado ? Colors.greenAccent : Colors.redAccent;
+    final icon = esAceptado ? Icons.check_circle : Icons.cancel;
+    return ListTile(
+      contentPadding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+      leading: Icon(icon, color: color),
+      title: Text(pedido.restaurante),
+      subtitle: Text('Total: \$${pedido.total.toStringAsFixed(2)}'),
+      trailing: Text(
+        pedido.estado,
+        style: TextStyle(color: color, fontWeight: FontWeight.bold),
       ),
     );
   }
